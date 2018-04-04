@@ -1,0 +1,29 @@
+{
+  "name": "video-ingestor",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha tests/**/*.js",
+    "start": "node index",
+    "start-dev": "nodemon index",
+    "debug-dev": "nodemon --inspect=9222 index"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
+    "mocha": "^5.0.4",
+    "nodemon": "^1.17.2",
+    "sinon": "^4.4.8"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
