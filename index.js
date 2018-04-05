@@ -1,7 +1,8 @@
 const express = require('express');
 const videoRoutes = require('./api/video/routes');
 
-const PORT = process.env.PORT || 8888;
+// Default NGINX/ElasticBeanstalk proxy port.
+const PORT = 8081;
 
 const app = express();
 app.use(videoRoutes);
