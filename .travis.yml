@@ -4,9 +4,7 @@ node_js:
   - "lts/*"
 
 #before_deploy:
-#  - ls
-#  - zip -r FLXIngestorDemoDev-${TRAVIS_BRANCH}-${TRAVIS_BUILD_NUMBER}.zip *
-#  - ls
+  - zip -r FLXIngestorDemoDev-${TRAVIS_BRANCH}-${TRAVIS_BUILD_NUMBER}.zip *
 
 deploy:
   provider: elasticbeanstalk
@@ -17,7 +15,7 @@ deploy:
   app: "Demo"
   env: "FLXIngestorDemoDev"
   bucket_name: "elasticbeanstalk-us-west-2-628858870799"
-  key: "FLXIngestorDemoDev-${TRAVIS_BRANCH}-${TRAVIS_BUILD_NUMBER}.zip"
+  zip_file: "FLXIngestorDemoDev-${TRAVIS_BRANCH}-${TRAVIS_BUILD_NUMBER}.zip"
   on:
     branch: 
       - develop  
