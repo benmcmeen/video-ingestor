@@ -7,6 +7,7 @@ before_deploy:
   - zip -r FLXIngestorDemoDev-${TRAVIS_BRANCH}-${TRAVIS_BUILD_NUMBER}.zip *
 
 deploy:
+  skip_cleanup: true
   provider: elasticbeanstalk
   access_key_id: $ACCESSKEYID
   secret_access_key:
