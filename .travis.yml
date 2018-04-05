@@ -5,7 +5,8 @@ node_js:
 
 #before_deploy:
   - zip -r FLXIngestorDemoDev-${TRAVIS_BRANCH}-${TRAVIS_BUILD_NUMBER}.zip *
-
+  - ls
+  
 deploy:
   provider: elasticbeanstalk
   access_key_id: $ACCESSKEYID
