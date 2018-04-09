@@ -10,6 +10,6 @@ describe('videoController', () => {
     };
     await videoController.index(req, res);
     const json = res.json.getCall(0).args[0];
-    expect(json.data).to.equal('This is a simple message.');
+    expect(json.data).to.equal('This is a simple message that\'s been updated.');
   });
 });
